@@ -1,0 +1,1 @@
+apiVersion: batch/v1kind: Jobmetadata:  name: app-jobspec:  template:    metadata:      name: app-pod    spec:      containers:      - name: app-container        image: my-app-image        command: ["./app"]      restartPolicy: Never
